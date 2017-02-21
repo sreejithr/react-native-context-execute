@@ -11,7 +11,6 @@ public class RNContextExecuteModule extends ReactContextBaseJavaModule {
 
   public RNContextExecuteModule(ReactApplicationContext reactContext) {
     super(reactContext);
-    ReactContextExecutor.getInstance().context = reactContext;
   }
 
   @Override

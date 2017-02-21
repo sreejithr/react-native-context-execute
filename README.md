@@ -35,6 +35,15 @@ Before using this, please note that **HeadlessJS** is another good way to go.
   	```
 
 ## Usage
+In your Java side, grab hold of the `ReactApplicationContext` and do:
+
+```java
+WritableMap payload = Arguments.createMap();
+payload.putString("some_key", "some_value");
+
+new ReactContextExecutor(reactApplicationContext).execute("some_other_key", payload);
+```
+
 ```javascript
 import { ContextExecute } from 'react-native-context-execute';
 

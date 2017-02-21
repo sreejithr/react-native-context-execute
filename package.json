@@ -2,7 +2,7 @@
 {
   "name": "react-native-context-execute",
   "version": "1.0.0",
-  "description": "",
+  "description": "Execute JS code in React Native's context even when RN is inactive (eg. app in background).",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,11 +10,9 @@
   "keywords": [
     "react-native"
   ],
-  "author": "",
+  "author": "Sreejith R",
   "license": "",
   "peerDependencies": {
     "react-native": "^0.29.0",
-    "react-native-windows": "^0.29.0"
-
   }
 }

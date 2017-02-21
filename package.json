@@ -1,7 +1,7 @@
 
 {
   "name": "react-native-context-execute",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Execute JS code in React Native's context even when RN is inactive (eg. app in background).",
   "main": "index.js",
   "scripts": {

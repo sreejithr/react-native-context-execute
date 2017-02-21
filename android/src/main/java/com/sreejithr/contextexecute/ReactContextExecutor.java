@@ -9,16 +9,13 @@ import com.facebook.react.bridge.WritableMap;
 
 public class ReactContextExecutor {
     public ReactContext context = null;
-    private static final ReactContextExecutor instance = new ReactContextExecutor();
 
-    private ReactContextExecutor() {
-    }
-
-    public static ReactContextExecutor getInstance() {
-        return instance;
+    public ReactContextExecutor(ReactContext context) {
+        this.context = context;
     }
 
     public void execute(String op, WritableMap data) {
-        context.getCatalystInstance().getJSModule(ContextExecutorJSModule.class).execute(op, data);
+        context.getCatalystInstance().getJSModule(ContextExecutorJSModule.class)
+            .execute(op, data);
     }
 }

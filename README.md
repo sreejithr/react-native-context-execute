@@ -1,6 +1,14 @@
 
 # react-native-context-execute
 
+Execute JS code in React Native's context even when RN is inactive (eg. app in background).
+
+In Android, where background services are indispensable, keeping RN in sync can be hard since RN doesn't stay active in background. **Currently, Android-only**.
+
+A tiny library which registers a `JavascriptModule` in RN's `JavascriptModuleRegistry` and makes `Catalyst` (Bridge) run it.
+
+Before using this, please note that **HeadlessJS** is another good way to go.
+
 ## Getting started
 
 `$ npm install react-native-context-execute --save`
@@ -10,14 +18,6 @@
 `$ rnpm link react-native-context-execute`
 
 ### Manual installation
-
-
-#### iOS
-
-1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-context-execute` and add `RNContextExecute.xcodeproj`
-3. In XCode, in the project navigator, select your project. Add `libRNContextExecute.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-4. Run your project (`Cmd+R`)<
 
 #### Android
 
